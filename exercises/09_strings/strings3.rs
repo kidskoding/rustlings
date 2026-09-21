@@ -4,7 +4,7 @@ fn trim_me(input: &str) -> &str {
 }
 
 fn compose_me(input: &str) -> String {
-    // TODO: Add " world!" to the string! There are multiple ways to do this
+    // TODO: Add " world!" to the string! There are multiple ways to do this.
     let mut res = input.to_string();
     res.push_str(" world!");
     res
