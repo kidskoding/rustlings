@@ -9,7 +9,10 @@
         packages = with pkgs; [
           bacon
           cargo-chef
+          cargo-generate
+          cargo-seek
           evcxr
+          
           rustlings
         ];
 
