@@ -14,8 +14,17 @@ struct OtherSoftware {
     version_number: String,
 }
 
-impl Licensed for SomeSoftware {} // Don't edit this line.
-impl Licensed for OtherSoftware {} // Don't edit this line.
+impl Licensed for SomeSoftware { // Don't edit this line.
+    fn licensing_info(&self) -> String {
+        "Default license".to_string()
+    }
+}
+
+impl Licensed for OtherSoftware { // Don't edit this line.
+    fn licensing_info(&self) -> String {
+        "Default license".to_string() 
+    }
+}
 
 fn main() {
     // You can optionally experiment here.
